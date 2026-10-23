@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Food Place - Premium Glassmorphism Food Ordering</title>
+  
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Core App Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- React 18, ReactDOM 18 & Babel Standalone -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.24.4/babel.min.js"></script>
+</head>
+<body class="bg-[#0c0a09] text-stone-100 antialiased selection:bg-amber-500 selection:text-white">
+  <!-- Fixed Background Canvas Scroll Animation -->
+  <canvas id="animation-canvas"></canvas>
+
+  <!-- Vignette & Refraction Overlay -->
+  <div class="canvas-overlay"></div>
+
+  <!-- Aurabite Glassmorphism Food Ordering Surface -->
+  <div id="root"></div>
+
+  <!-- Background Scroll Animation Controller -->
+  <script src="scroll-animation.js"></script>
+
+  <!-- React Glassmorphism Application -->
+  <script type="text/babel" src="app.jsx"></script>
+</body>
+</html>

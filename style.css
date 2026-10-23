@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+  background-color: #0c0a09;
+  color: #f5f5f4;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+}
+
+/* Background Canvas Scroll Animation */
+#animation-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background-color: #0c0a09;
+}
+
+/* Ambient Vignette & Contrast Overlay */
+.canvas-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(circle at 50% 30%, rgba(12, 10, 9, 0.5) 0%, rgba(12, 10, 9, 0.82) 100%);
+}
+
+/* Aurabite Food Ordering Webpage Container */
+#root {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  background: transparent;
+}
+
+/* Glassmorphism custom styles */
+.glass-panel {
+  background: rgba(28, 25, 23, 0.72);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.glass-card {
+  background: rgba(35, 30, 27, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-subtle {
+  background: rgba(45, 38, 33, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-pill {
+  background: rgba(50, 44, 40, 0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.glow-orange {
+  box-shadow: 0 8px 24px -4px rgba(249, 115, 22, 0.5), inset 0 1px 1px rgba(255, 255, 255, 0.25);
+}
+
+.glow-orange-subtle {
+  box-shadow: 0 4px 18px -2px rgba(249, 115, 22, 0.3);
+}
+
+.phone-frame-shadow {
+  box-shadow: 0 30px 80px -15px rgba(0, 0, 0, 0.85), 0 0 50px -10px rgba(249, 115, 22, 0.15);
+}
+
+/* Minimal sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(12, 10, 9, 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #38302b;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
